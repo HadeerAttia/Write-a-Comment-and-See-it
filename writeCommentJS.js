@@ -1,5 +1,6 @@
 //leaveComment is a Class add to the Write a Comment Button 
 //inputPlace is a Class add to input text 
+$(function () {
 $(".leaveComment").each(function () {
         $(this).click(function () {
             var hisComment = $(this).prev('.inputPlace').val();
@@ -10,3 +11,4 @@ $(".leaveComment").each(function () {
             $(this).prev('.inputPlace').val("");
         });
     });
+});
